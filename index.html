@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Webpage</title>
+    <link rel="stylesheet" href="Index.css">
+    <style>
+        body {
+            background: linear-gradient(to right, black, rgb(1, 1, 73), rgb(167, 5, 192), black);
+            margin: 0;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            transition: all 1s ease-in-out;
+            color: silver;
+            text-align: center;
+            font-size: 100px;
+            margin: 10px;
+            font-family: cursive;
+        }
+
+        body:hover h1 {
+            font-size: 120px; /* Reduced slightly for better layout balance */
+        }
+
+        .Large {
+            transition: all 1s ease-in-out;
+            width: 70%;
+            margin: 0 auto 30px auto;
+            display: block;
+            height: 500px;
+            object-fit: cover;
+            border: 2px rgb(75, 75, 75) solid;
+            border-radius: 30px; /* Replaced extreme 500px capsule with a smooth pill shape */
+        }
+
+        body:hover .Large {
+            width: 90%;
+        }
+
+        .Main, .Main1 {
+            width: 90%;
+            margin: 0 auto 40px auto;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+            flex-wrap: wrap; /* Prevents text overflow on small viewports */
+        }
+
+        .Small {
+            transition: all 0.5s ease-in-out;
+            background-color: silver;
+            width: 300px;
+            text-align: center;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .Small img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 2px rgb(75, 75, 75) solid;
+        }
+
+        .Small:hover {
+            transform: scale(1.08); /* Fixed horizontal distortion */
+        }
+
+        .Small1 {
+            transition: all 0.5s ease-in-out;
+            background-color: silver;
+            width: 200px;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .Small1 img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-bottom: 2px rgb(75, 75, 75) solid;
+        }
+
+        .Small1:hover {
+            transform: scale(1.08); 
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #222;
+            margin: 12px 0;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: silver;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Disney</h1>
+    
+    <img src="https://4kwallpapers.com/images/wallpapers/cinderella-castle-1920x1080-9839.jpg" alt="Cinderella Castle" class="Large">
+    
+    <!-- Row 1: Large Cards -->
+    <div class="Main">
+        <div class="Small">
+            <img src="https://i.pinimg.com/474x/53/e6/e1/53e6e1a61f0dbf0886f2a66210dff2a7.jpg" alt="Mickey Mouse">
+            <h2>Mickey</h2>
+        </div>
+        <div class="Small">
+            <img src="https://i.pinimg.com/736x/8b/30/31/8b3031fa0b9a87cd91d9ee1a9f0914d9.jpg" alt="Scooby Doo">
+            <h2>Scooby Doo</h2>
+        </div>
+        <div class="Small">
+            <img src="https://w0.peakpx.com/wallpaper/54/533/HD-wallpaper-donald-duck-cartoon-cartoon-donald-duck-thumbnail.jpg" alt="Donald Duck">
+            <h2>Donald Duck</h2>
+        </div>
+    </div>
+    
+    <!-- Row 2: Smaller Grid Cards -->
+    <div class="Main1">
+        <div class="Small1">
+            <img src="https://c4.wallpaperflare.com/wallpaper/243/997/130/frozen-disney-movie-anna-elsa-sisters-disney-frozen-queen-elsa-and-princess-anna-wallpaper-preview.jpg" alt="Frozen">
+            <h2>Frozen</h2>
+        </div>
+        <div class="Small1">
+            <img src="https://c4.wallpaperflare.com/wallpaper/548/664/993/pokemon-zaphire-pikachu-wallpaper-preview.jpg" alt="Pokemon">
+            <h2>Pokemon</h2>
+        </div>
+        <div class="Small1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1XXRg5oZ3-2JVQFbEU0Kl1DaFJzoHRCSPODYMZEUH6Ka2vqByxu1w9Eh3&s=10" alt="Shin-chan">
+            <h2>Shin-chan</h2>
+        </div>
+        <div class="Small1">
+            <img src="https://m.media-amazon.com/images/I/81N67ptRUEL.jpg" alt="Spider-Man">
+            <h2>Spider-Man</h2>
+        </div>
+        <div class="Small1">
+            <img src="https://rukminim2.flixcart.com/image/480/480/poster/d/v/j/athah-poster-disney-cinderella-hd-athed1451-medium-original-imaegjrrsvyhuptj.jpeg?q=90" alt="Cinderella">
+            <h2>Cinderella</h2>
+        </div>
+        <div class="Small1">
+            <img src="https://rukminim2.flixcart.com/image/480/640/j95y4cw0/poster/b/u/v/large-wallpaper-ben-10-ultimate-alien-and-gwen-on-large-print-original-imaew88xg7fwzshd.jpeg?q=90" alt="Ben 10">
+            <h2>Ben 10</h2>
+        </div>
+    </div>
+  
+    <!-- Row 3: Large Cards -->
+    <div class="Main">
+        <div class="Small">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuXuvimd1c9ZTucn22Gz1pmahSW9ZBAOxbycljYrz6tLv9RxUFL_2I9KDG&s=10" alt="Dora the Explorer">
+            <h2>Dora</h2>
+        </div>
+        <div class="Small">
+            <img src="https://r1.ilikewallpaper.net/iphone-8-wallpapers/download/30819/Cute-Doraemon-Cartoon-iphone-8-wallpaper-ilikewallpaper_com_640.jpg" alt="Doraemon">
+            <h2>Doraemon</h2>
+        </div>
+        <div class="Small">
+            <img src="https://i.pinimg.com/736x/c4/5d/fa/c45dfa73cf567700e760b75ee0928347.jpg" alt="Richie Rich">
+            <h2>Richie Rich</h2>
+        </div>
+    </div>
+
+    <h3>watch@disney.com</h3>
+
+</body>
+</html>
